@@ -1,0 +1,25 @@
+{
+  "name": "update_cloudant",
+  "version": "1.0.0",
+  "description": "It is used to update docs in cloudant.",
+  "main": "update_cloudant.js",
+  "scripts": {
+    "start": "node update_cloudant.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mylind/apic-resource.git"
+  },
+  "keywords": [
+    "cloudant"
+  ],
+  "author": "Hong Liang Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mylind/apic-resource/issues"
+  },
+  "homepage": "https://github.com/mylind/apic-resource#readme",
+  "dependencies": {
+    "cloudant": "^1.5.2"
+  }
+}

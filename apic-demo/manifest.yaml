@@ -1,0 +1,10 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: stage1.mybluemix.net
+  name: blue-util1
+  host: blue-util1
+  disk_quota: 1024M
+  services:
+  - Data Cache-bq

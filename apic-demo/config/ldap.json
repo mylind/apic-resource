@@ -1,0 +1,5 @@
+{
+	"url":"",
+	"base":"",
+	"attributes":["dn", "sn", "cn","uid","mail", "notesId", "jobresponsibilities", "isManager", "manager"]
+}

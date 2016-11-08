@@ -1,0 +1,33 @@
+div.panel.panel-default
+   div.panel-heading 
+    h1 {{title}}
+   div.panel-body
+    p
+    div(ng-control='moviesearch')
+    form#getKey(ng-submit="searchactor()")
+      label(for='email')   URL Input:  
+        input#email(type='text', ng-model="email", name="email")
+        p
+        input.btn.btn-primary(type='submit', value='Submit')
+    p
+    hr
+    h1 {{title1}}
+    .row(ng-repeat='stars in starExample')
+     .movboxbg.col-md-2.col-sm-12(ng-repeat='star in stars')
+      .media
+        img.media-object(ng-src='{{star.url}}' width='150px'  ng-click='setinput(star.url)') 
+
+    h2 {{movielist}}
+    .row(ng-repeat='movie in movies' ng-class="{even: !$even, odd: !$odd}")
+     .movboxbg.col-md-12.col-sm-12
+      .media
+        .media-body 
+          h4.media-heading {{movie.title}}
+          p Director: {{movie.director}}
+          p Cast:     {{movie.cast}}
+          p Writer:   {{movie.writer}} 
+          p Yesr:     {{movie.year}}
+          p Runtime:  {{movie.runtime}}
+          p Genre:    {{movie.genre}}
+          p Rating:   {{movie.rating}}
+          p IMDB:     {{movie.imdb}}

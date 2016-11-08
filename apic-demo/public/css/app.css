@@ -1,0 +1,66 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.navbg{
+  /*background:#725E82;*/
+  background:#4b5cc4;
+  
+}
+.tabbg{
+  /*background:#cca4e3;*/
+  background:#e3f9fd;
+}
+.titlebg{
+  color:#ffffff;
+}
+.boxbg{
+   border:1px solid #725E82 ;
+   height:200px;
+   padding-top:20px;
+}
+.odd {
+background-color: white;
+}
+.even {
+background-color: grey;
+}
+.movboxbg{
+   border:1px solid #725E82 ;
+   height:300px;
+   padding-top:20px;
+}

@@ -1,0 +1,23 @@
+doctype html
+html(ng-app="myApp")
+  head
+    meta(charset='utf8')
+    base(href='/')
+    title Movie Search
+    link(rel='stylesheet', href='/css/app.css')
+    link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
+    script(src='/lib/jquery/dist/jquery.min.js')
+    script(src='/lib/bootstrap/dist/js/bootstrap.min.js')
+  body
+    nav.navbar.navbar-fixed-top.navbg
+        div.container-fliud
+            div.navbar-header
+             a.navbar-brand.titlebg(href="#") APIC Demo
+    block body
+    
+    nav.navbar.navbar-default.navbar-fixed-bottom
+        div.container
+           div.navbar-header
+            p.navbar-brand
+             | Demo: v 
+             span(app-version)
